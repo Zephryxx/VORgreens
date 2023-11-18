@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact_us_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9ecddfd3cd.js" crossorigin="anonymous"></script>
+    <title>Contact Us</title>
+
+</head>
+
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="homepage.html"><h1>VORgreens</h1></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="find_us.html">Find Us</a></li>
+                    <li><a href="contact_us.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <div class="title">
+        <p>Punya saran, masukkan, kritik?<br><b>Hubungi Kami</b>!</p>
+    </div>
+    <div class="title-underline"></div>
+
+    <div class="under-title">
+        <p>Kami selalu senang mendengarkan masukkan dari Anda<br>
+            Silahkan masukkan feedback Anda dan <b> hubungi kami!</b></p>
+    </div>
+
+    <div class="container">
+        <div class="title">Silahkan isi form di bawah ini</div>
+        <div class="error"></div>
+        <form action="#" id="form">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Nama</span>
+                    <input type="text" id="name" placeholder="Masukkan nama anda">
+                    <small>Error messages</small>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" id="email" placeholder="Masukkan email anda">
+                    <small>Error messages</small>
+                </div>
+                <div class="input-box">
+                    <span class="details">Umur</span>
+                    <input type="number" id="age" placeholder="Masukkan umur anda">
+                    <small>Error messages</small>
+                </div>
+            </div>
+
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Kelamin</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Pria</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Wanita</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Jangan sebutkan</span>
+                    </label>
+                </div> 
+                <div class="user-details">
+                    <div class="input-box">
+                        <small>Error messages</small>
+                    </div>
+                </div>
+            </div>
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Pesan</span>
+                    <input type="text" id="message" class="msg" placeholder="Masukkan pesan anda">
+                    <small>Error messages</small>
+                </div>
+            </div>
+            <div class="user-details">
+                <div class="check-box">
+                    <input type="checkbox" id="subscribe">
+                    <label for="" class="details">Berlangganan kepada kami</label>
+                    <br><small>Error messages</small>
+                </div>
+                <div class="button">
+                    <button>KIRIM</button>
+                    <br><small>Ada kesalahan pengisian form</small>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+    <section class="footer">
+        <div class="row">
+            <div class="footer-content">
+                <h3>VORgreens</h3>
+            </div>
+            <div class="footer-content">
+                <h3>Location</h3>
+                <p>Pd. Kacang Bar., Kec. Pd. Aren, Kota Tangerang Selatan, Banten</p>
+            </div>
+            <div class="footer-content">
+                <h3>About Us</h3>
+                <p>Selalu Menyiapkan makanan lezat dan sehat</p>
+            </div>
+            <div class="footer-content">
+                <h3>Social Media</h3>
+                <i class="fa-brands fa-twitter"></i>
+                <a href="">@VORgreens</a> <br>
+                <i class="fa-brands fa-instagram"></i>
+                <a href="">@VORgreens</a> <br>
+                <i class="fa-brands fa-facebook"></i>
+                <a href="">@VORgreens</a> <br>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
